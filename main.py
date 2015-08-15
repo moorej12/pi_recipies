@@ -1,10 +1,11 @@
 import cmd
+import User
 
 class CmdPrompt(cmd.Cmd):
 	"""Simple command processor"""
 
 	def do_register(self, line):
-		newUser = User.create()
+		newUser = User.User.createUser()
 		newUser.run()
 
 	def do_login(self, line):

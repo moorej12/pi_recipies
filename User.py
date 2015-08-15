@@ -1,3 +1,6 @@
+import AuthorUser
+import ConsumerUser
+
 class User():
 
 	def __init__(self):
@@ -5,10 +8,9 @@ class User():
 		self._pass = ""
 		self._cmd = None
 		self._recipies = []
-		self.
 
-	@staticMethod
-	def createUser(self):
+	@staticmethod
+	def createUser():
 		type = input("Would you like to be an author (a) or a consumer (c)? ")
 		newUser = None
 		if(type == "a"):
@@ -29,4 +31,4 @@ class User():
 			return False
 
 	def run(self):
-		
+		return True
